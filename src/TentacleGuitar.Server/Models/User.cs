@@ -18,5 +18,10 @@ namespace TentacleGuitar.Server.Models
 
         [MaxLength(64)]
         public string Email { get; set; }
+
+        [MaxLength(64)]
+        public string Token { get; set; }
+
+        public DateTime Expire { get; set; }
     }
 }
