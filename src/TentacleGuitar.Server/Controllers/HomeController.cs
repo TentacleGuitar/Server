@@ -21,5 +21,13 @@ namespace TentacleGuitar.Server.Controllers
             }
             return Content(user?.Token ?? "Access Denied");
         }
+
+        [HttpPost("/GetMusics")]
+        public IActionResult GetMusics()
+        {
+            return Json(DB.Musics.OrderBy(x => x.Level).ToList());
+        }
+
+        public IActionResult 
     }
 }
