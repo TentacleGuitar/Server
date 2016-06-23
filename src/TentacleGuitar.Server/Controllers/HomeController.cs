@@ -48,5 +48,17 @@ namespace TentacleGuitar.Server.Controllers
             }
             return File(music.Instrument, "application/octet-stream");
         }
+
+        [HttpPost("/GetTabular")]
+        public IActionResult GetTabular(Guid Id)
+        {
+            var music = DB.Musics.SingleOrDefault(x => x.Id == Id);
+            if (music == null)
+            {
+                Response.StatusCode = 404;
+                return Content("Not Found");
+            }
+            return Content(music.Tabular);
+        }
     }
 }
