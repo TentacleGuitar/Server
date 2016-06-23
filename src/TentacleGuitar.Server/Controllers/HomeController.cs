@@ -13,6 +13,12 @@ namespace TentacleGuitar.Server.Controllers
         public IActionResult SignIn(string Username, string Password)
         {
             var user = DB.Users.SingleOrDefault(x => x.UserName == Username && x.Password == Password);
+            if (user.Expire <= DateTime.Now)
+            {
+                user.Token = Guid.NewGuid().ToString();
+                user.Expire = DateTime.Now.AddDays(15);
+                DB.SaveChanges();
+            }
             return Content(user?.Token ?? "Access Denied");
         }
     }
