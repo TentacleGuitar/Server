@@ -27,7 +27,5 @@ namespace TentacleGuitar.Server.Controllers
         {
             return Json(DB.Musics.OrderBy(x => x.Level).ToList());
         }
-
-        public IActionResult 
     }
 }
