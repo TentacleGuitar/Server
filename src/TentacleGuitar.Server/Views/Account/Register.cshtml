@@ -1,0 +1,36 @@
+﻿@{ 
+    ViewBag.Title = "Sign Up";
+}
+<div class="with-sidebar-wrapper">
+    <section id="content-section-1">
+        <div class="section-container container">
+            <div class="blog-item-wrapper">
+                <div class="blog-item-holder">
+                    <div class="gdlr-item gdlr-blog-full">
+                        <div class="gdlr-ux gdlr-blog-full-ux">
+                            <article class="post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row category-life-style">
+                                <div class="gdlr-standard-style">
+                                    <div class="gdlr-blog-content-wrapper">
+                                        <div class="gdlr-blog-content-inner">
+                                            <div class="gdlr-blog-content">
+                                                <form asp-action="Register" asp-controller="Account" method="post">
+                                                    <p><input type="text" name="email" placeholder="Email" /></p>
+                                                    <p><input type="text" name="username" placeholder="Username" /></p>
+                                                    <p><input type="password" name="password" placeholder="Password" /></p>
+                                                    <p><input type="password" name="password" placeholder="Confirm" /></p>
+                                                    <p><input type="submit" value="Sign Up" /></p>
+                                                </form>
+                                            </div>
+                                        </div> <!-- blog-content-inner -->
+
+                                    </div> <!-- blog-content-wrapper -->
+                                    <div class="clear"></div>
+                                </div>
+                            </article><!-- #post -->
+                        </div>
+                    </div>
+                </div>
+            </div><div class="clear"></div>
+        </div>
+    </section>
+</div>
