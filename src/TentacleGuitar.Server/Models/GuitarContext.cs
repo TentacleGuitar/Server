@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace TentacleGuitar.Server.Models
 {
-    public class GuitarContext : DbContext
+    public class GuitarContext : IdentityDbContext<User, IdentityRole<long>, long>
     {
         public GuitarContext(DbContextOptions opt) 
             : base(opt)
@@ -14,8 +11,6 @@ namespace TentacleGuitar.Server.Models
         }
 
         public DbSet<Music> Musics { get; set; }
-
-        public DbSet<User> Users { get; set; }
 
         public DbSet<History> Histories { get; set; }
 

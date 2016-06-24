@@ -14,6 +14,8 @@ namespace TentacleGuitar.Server.Models
             var UserManager = services.GetRequiredService<UserManager<User>>();
             var RoleManager = services.GetRequiredService<RoleManager<IdentityRole<long>>>();
 
+            DB.Database.EnsureCreated();
+
             await RoleManager.CreateAsync(new IdentityRole<long>("Root"));
             await RoleManager.CreateAsync(new IdentityRole<long>("Member"));
 

@@ -23,10 +23,12 @@ namespace TentacleGuitar.Server
                 x.User.AllowedUserNameCharacters = null;
             })
                  .AddDefaultTokenProviders()
-                 .AddEntityFrameworkStores<GuitarContext>();
+                 .AddEntityFrameworkStores<GuitarContext, long>();
 
             services.AddMvc();
             services.AddLogging();
+            services.AddSmartUser<User, long>();
+            services.AddSmartCookies();
         }
 
         public async void Configure(IApplicationBuilder app, ILoggerFactory logger)
@@ -38,7 +40,7 @@ namespace TentacleGuitar.Server
             app.UseDeveloperExceptionPage();
             app.UseMvcWithDefaultRoute();
 
-            await SampleData.InitDB(app.ApplicationServices);
+           await SampleData.InitDB(app.ApplicationServices);
         }
     }
 }

@@ -1,0 +1,237 @@
+html.ltie9 body, body{ min-width: 1140px; } .container{ max-width: 1140px; }
+.body-wrapper.gdlr-boxed-style { max-width: 1240px; }
+.gdlr-logo{ max-width: 227px; }
+.gdlr-logo{ margin-top: 27px; }
+.gdlr-logo{ margin-bottom: 28px; }
+.gdlr-navigation{ margin-top: 24px; }
+.gdlr-main-menu > li > a{ padding-bottom: 30px; }
+h1, h2, h3, h4, h5, h6{ font-family: "Sansation"; }
+body{ font-family: "Open Sans"; }
+.gdlr-navigation{ font-family: "Open Sans"; }
+.gdlr-slider-item{ font-family: "Open Sans"; }
+body{ font-size: 13px; }
+h1{ font-size: 47px; }
+h2{ font-size: 41px; }
+h3{ font-size: 32px; }
+h4{ font-size: 26px; }
+h5{ font-size: 21px; }
+h6{ font-size: 16px; }
+.gdlr-header-overlay{ background-color: #111111; }
+.gdlr-main-menu > li > a{ color: #ffffff; }
+.gdlr-main-menu > li:hover > a, .gdlr-main-menu > li.current-menu-item > a, .gdlr-main-menu > li.current-menu-ancestor > a{ color: #cccccc; }
+.gdlr-main-menu > .gdlr-normal-menu .sub-menu, .gdlr-main-menu > .gdlr-mega-menu .sf-mega{ border-top-color: #74c6de; }
+.gdlr-main-menu > .gdlr-normal-menu li , .gdlr-main-menu > .gdlr-mega-menu .sf-mega{ background-color: #262626; }
+.gdlr-main-menu > li > .sub-menu a, .gdlr-main-menu > li > .sf-mega a{ color: #bebebe; }
+.gdlr-main-menu > li > .sub-menu a:hover, .gdlr-main-menu > li > .sub-menu .current-menu-item > a, .gdlr-main-menu > li > .sub-menu .current-menu-ancestor > a, .gdlr-main-menu > li > .sf-mega a:hover, .gdlr-main-menu > li > .sf-mega .current-menu-item > a, .gdlr-main-menu > li > .sf-mega .current-menu-ancestor > a{ color: #ffffff; } .gdlr-main-menu .gdlr-normal-menu li > a.sf-with-ul:after { border-left-color: #ffffff; } 
+.gdlr-main-menu .sf-mega-section-inner > ul > li > a:hover, .gdlr-main-menu .sf-mega-section-inner > ul > li.current-menu-item > a { background-color: #393939; } 
+.gdlr-main-menu > li > .sub-menu *, .gdlr-main-menu > li > .sf-mega *{ border-color: #111111; }
+.gdlr-main-menu > li > .sf-mega .sf-mega-section-inner > a { color: #ffffff; }
+.gdlr-main-menu > li > .sf-mega .sf-mega-section-inner > a:hover, .gdlr-main-menu > li > .sf-mega .sf-mega-section-inner.current-menu-item > a, .gdlr-main-menu > li > .sf-mega .sf-mega-section-inner.current-menu-ancestor > a { color: #ffffff; }
+#gdlr-responsive-navigation.dl-menuwrapper button { background-color: #262626; }
+#gdlr-responsive-navigation.dl-menuwrapper button:hover, #gdlr-responsive-navigation.dl-menuwrapper button.dl-active, #gdlr-responsive-navigation.dl-menuwrapper ul{ background-color: #262626; }
+.gdlr-nav-search-form-button { background-color: #f8f8f8; }
+.gdlr-nav-search-form-button { color: #bfbfbf; }
+.gdlr-nav-search-form-button { border-color: #ececec; }
+.gdlr-nav-search-form{ background-color: #f5f5f5; }
+.gdlr-nav-search-form i, .gdlr-nav-search-form input[type="text"]{ color: #a2a2a2; }
+body{ background-color: #212121; }
+.body-overlay{ background-color: #212121; }
+.gdlr-page-title{ color: #ffffff; }
+.gdlr-page-caption{ color: #ffffff; }
+.gdlr-page-title-wrapper .gdlr-page-header-icon { border-color: #ffffff; color: #ffffff; }
+h1, h2, h3, h4, h5, h6, .gdlr-title, .gdlr-title a{ color: #ffffff; }
+.gdlr-item-title-wrapper .gdlr-item-title, .gdlr-item-title-wrapper .gdlr-separator{ color: #ffffff; border-color: #ffffff; }
+.gdlr-item-title-wrapper .gdlr-item-caption{ color: #74c6de; }
+body{ color: #c5c5c5; }
+a{ color: #ffffff; }
+a:hover{ color: #74c6de; }
+body *{ border-color: #636363; }
+.page-not-found-block{ background-color: #d65938; }
+.page-not-found-block{ color: #ffffff; }
+.page-not-found-search  .gdl-search-form input[type="text"]{ background-color: #963a20; }
+.page-not-found-search  .gdl-search-form input[type="text"]{ color: #d57f5c; }
+.gdlr-sidebar .gdlr-widget-title{ color: #ffffff; }
+.gdlr-sidebar *{ border-color: #424242; }
+.gdlr-sidebar ul li:before { border-color: #ffffff; }
+.gdl-search-form input{ background-color: #3d3d3d; }
+.gdl-search-form input{ color: #cccccc; }
+.gdl-search-form input{ border-color: #3d3d3d; }
+.tagcloud a{ background-color: #74c6de; }
+.tagcloud a, .tagcloud a:hover{ color: #ffffff; }
+ul.gdlr-twitter-widget li:before{ color: #74C6DE; }
+.gdlr-accordion-item.style-1 .accordion-title{ background-color: #333333; }
+.gdlr-accordion-item.style-1 .accordion-title{ color: #ffffff; }
+.gdlr-accordion-item.style-1 .accordion-title i{ background-color: #74c6de; }
+.gdlr-accordion-item.style-1 .accordion-title i{ color: #3a3a3a; }
+.gdlr-box-with-icon-item{ background-color: #303030; }
+.gdlr-box-with-icon-item > i, .gdlr-box-with-icon-item .box-with-icon-title{ color: #ffffff; }
+.gdlr-box-with-icon-item{ color: #cccccc; }
+.gdlr-button, .gdlr-button:hover, input[type="button"], input[type="submit"]{ background-color: #74c6de; }
+.gdlr-button, .gdlr-button:hover, input[type="button"], input[type="submit"], .gdlr-top-menu > .gdlr-mega-menu .sf-mega a.gdlr-button{ color: #ffffff; }
+.gdlr-button, input[type="button"], input[type="submit"]{ border-color: #519ead; }
+.column-service-icon, .column-service-title{ color: #292929; }
+.list-with-icon .list-with-icon-title{ color: #74c6de; }
+.gdlr-pie-chart-item .pie-chart-title{ color: #313131; }
+.gdlr-price-inner-item{ background-color: #303030; }
+.gdlr-price-item .price-title-wrapper{ background-color: #1e1e1e; }
+.gdlr-price-item .price-title{ color: #ffffff; }
+.gdlr-price-item .price-tag{ background-color: #4c4c4c; }
+.gdlr-price-item .best-price .price-tag{ background-color: #74c6de; }
+.gdlr-price-item .price-tag{ color: #ffffff; }
+.gdlr-process-tab .gdlr-process-icon{ background-color: #303030; }
+.gdlr-process-tab .gdlr-process-icon{ border-color: #3d3d3d; }
+.gdlr-process-tab .gdlr-process-icon i{ color: #ffffff; }
+.gdlr-process-tab .process-line .process-line-divider{ border-color: #6b6b6b; } .gdlr-process-tab .process-line .icon-chevron-down, .gdlr-process-tab .process-line .icon-chevron-right{ color: #6b6b6b; }
+.gdlr-process-wrapper .gdlr-process-tab .gdlr-process-title{ color: #ffffff; }
+.stunning-text-title{ color: #414141; }
+.stunning-text-caption{ color: #949494; }
+.gdlr-stunning-text-item.with-padding{ background-color: #f3f3f3; }
+.gdlr-stunning-text-item.with-border{ border-color: #f3f3f3; }
+.tab-title-wrapper .tab-title{ background-color: #383838; }
+.tab-title-wrapper .tab-title{ color: #ffffff; }
+.tab-title-wrapper .tab-title.active, .tab-content-wrapper{ background-color: #444444; }
+table tr th{ background-color: #74c6de; }
+table tr th{ color: #ffffff; }
+table.style-2 tr:nth-child(odd){ background-color: #303030; }
+table.style-2 tr:nth-child(odd){ color: #949494; }
+table.style-2 tr:nth-child(even){ background-color: #282828; }
+table.style-2 tr:nth-child(even){ color: #949494; }
+.gdlr-blog-title, .gdlr-blog-title a{ color: #74c6de; }
+.gdlr-blog-title a:hover{ color: #74c6de; }
+.blog-date-wrapper{ color: #ffffff; }
+.blog-date-wrapper, .blog-date-wrapper *{ border-bottom-color: #74c6de; }
+.blog-info, .blog-info a, .comment-time, .comment-time a{ color: #a0a0a0; }
+.gdlr-blog-grid .gdlr-standard-style{ background-color: #191919; }
+.blog-info i, .comment-time i, .comment-reply i{ color: #6f6f6f; }
+.gdlr-blog-thumbnail .gdlr-sticky-banner{ background-color: #74c6de; }
+.gdlr-blog-thumbnail .gdlr-sticky-banner{ color: #ffffff; }
+.gdlr-standard-style .gdlr-single-blog-tag a{ background-color: #74c6de; }
+.gdlr-standard-style .gdlr-single-blog-tag a{ color: #ffffff; }
+.format-aside .gdlr-blog-content{ background-color: #74c6de; }
+.format-aside .gdlr-blog-content{ color: #ffffff; }
+.format-quote .gdlr-top-quote blockquote{ color: #8d8d8d; }
+.format-quote .gdlr-quote-author{ color: #74c6de; }
+.gdlr-single-nav > div i{ background-color: #353535; }
+.gdlr-single-nav > div i{ color: #ffffff; }
+.portfolio-item-filter a{ background-color: #424242; }
+.portfolio-item-filter a{ color: #a0a0a0; }
+.portfolio-item-filter a:hover, .portfolio-item-filter a.active{ background-color: #74c6de; }
+.portfolio-item-filter a:hover, .portfolio-item-filter a.active{ color: #ffffff; }
+.gdlr-image-link-shortcode .gdlr-image-link-overlay, .portfolio-thumbnail .portfolio-overlay{ background-color: #42b9dd; }
+.portfolio-title a{ color: #ffffff; }
+.portfolio-title a:hover{ color: #ffffff; }
+.portfolio-info, .portfolio-info a{ color: #979797; }
+.gdlr-modern-portfolio .portfolio-content-wrapper{ background-color: #0a0a0a; }
+.portfolio-item-holder .gdlr-modern-portfolio .portfolio-title a{ color: #ffffff; }
+.gdlr-pagination .page-numbers{ background-color: #3d3d3d; }
+.gdlr-pagination .page-numbers{ color: #ffffff; }
+.gdlr-pagination .page-numbers:hover, .gdlr-pagination .page-numbers.current{ background-color: #74c6de; }
+.gdlr-pagination .page-numbers:hover, .gdlr-pagination .page-numbers.current{ color: #ffffff; }
+.gdlr-album-song-list li{ background-color: #080808; }
+.gdlr-album-item .gdlr-album-content{ background-color: #2f2f2f; }
+.gdlr-album-item .gdlr-album-content:hover{ background-color: #53bbd9; }
+.gdlr-album-item .gdlr-album-content, .gdlr-album-item .gdlr-album-content a{ color: #ffffff; }
+.gdlr-top-player{ background: #000000; }
+.gdlr-top-player .gdlr-top-player-title{ color: #ffffff; }
+.gdlr-top-player .mejs-container .mejs-controls{ background: #1c1c1c; }
+.gdlr-player-item .gdlr-player-list li{ background: #262626; }
+.gdlr-player-item .gdlr-player-list li, .gdlr-top-player .mejs-container .mejs-controls{ border-top-color: #373737; } .gdlr-top-player .mejs-controls .mejs-time-rail{ border-left-color: #373737; }
+.gdlr-player-item .gdlr-player-list li, .gdlr-top-player .mejs-container .mejs-controls{ border-bottom-color: #030303; } .gdlr-top-player .mejs-button.mejs-playpause-button{ border-right-color: #030303; }
+.gdlr-top-player .mejs-controls .mejs-time-rail .mejs-time-total, .gdlr-float-player .mejs-controls .mejs-time-rail .mejs-time-total, .gdlr-float-player .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total{ background: #0b0b0b; }
+.gdlr-top-player .mejs-controls .mejs-time-rail .mejs-time-loaded, .gdlr-top-player .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total, .gdlr-float-player .mejs-controls .mejs-time-rail .mejs-time-loaded{ background: #464849; }
+.gdlr-top-player .mejs-controls .mejs-time-rail .mejs-time-current, .gdlr-top-player .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current, .gdlr-float-player .mejs-controls .mejs-time-rail .mejs-time-current, .gdlr-float-player .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current{ background: #7facb7; }
+.event-status-wrapper, .gdlr-single-event .gdlr-event-info .gdlr-head{ color: #ffffff; }
+.gdlr-single-event .gdlr-event-title, .event-status-wrapper .sold-out{ color: #74c6de; }
+.gdlr-single-event .gdlr-event-location{ color: #ffffff; }
+.gdlr-widget-event .event-title a{ color: #74c6de; }
+.gdlr-widget-event .event-date-wrapper{ color: #ffffff; }
+.gdlr-list-event .event-date-wrapper{ color: #74c6de; }
+.gdlr-list-event .event-location a, .gdlr-list-event .event-title a{ color: #ffffff; }
+.gdlr-personnel-item .personnel-item-inner{ background-color: #303030; }
+.gdlr-personnel-item .personnel-author{ color: #ffffff; }
+.gdlr-personnel-item .personnel-author-image{ border-color: #74c6de; }
+.gdlr-personnel-item .personnel-position{ color: #969696; }
+.gdlr-personnel-item .personnel-content{ color: #cccccc; }
+.gdlr-personnel-item .personnel-social i{ color: #ffffff; }
+.gdlr-testimonial-item .testimonial-item-inner, .gdlr-testimonial-item .testimonial-author-image{ background-color: #303030; }
+.gdlr-testimonial-item .testimonial-content{ color: #9b9b9b; }
+.gdlr-testimonial-item .testimonial-author{ color: #74c6de; }
+.gdlr-testimonial-item .testimonial-position{ color: #ffffff; }
+.gdlr-testimonial-item .testimonial-author-image{ border-color: #74c6de; }
+.gdlr-testimonial-item.box-style .testimonial-item-inner:after{ border-top-color: #565656; border-left-color: #565656; }
+.gdlr-gallery-thumbnail .gallery-item{ background-color: #3a3a3a; }
+.gdlr-gallery-thumbnail-container .gallery-caption{ background-color: #000000; }
+.gdlr-gallery-thumbnail-container .gallery-caption{ color: #ffffff; }
+.nivo-controlNav a, .flex-control-paging li a, .ls-flawless .ls-bottom-slidebuttons a{ background-color: #ffffff; }
+.nivo-controlNav a:hover, .nivo-controlNav a.active, .flex-control-paging li a:hover, .flex-control-paging li a.flex-active,.ls-flawless .ls-bottom-slidebuttons a.ls-nav-active, .ls-flawless .ls-bottom-slidebuttons a:hover { background-color: #5e5e5e; }
+.nivo-controlNav a, .flex-control-paging li a, .ls-flawless .ls-bottom-slidebuttons a{ border-color: #5e5e5e !important; }
+.nivo-directionNav a, .flex-direction-nav a, .ls-flawless .ls-nav-prev, .ls-flawless .ls-nav-next{ background-color: #000000; }
+body .nivo-directionNav a, body .flex-direction-nav a, body .flex-direction-nav a:hover, .ls-flawless .ls-nav-prev, .ls-flawless .ls-nav-next{ color: #ffffff; }
+.gdlr-caption{ background-color: #000000; }
+.gdlr-caption-title{ color: #ffffff; }
+.gdlr-caption-text{ color: #ffffff; }
+.gdlr-caption-wrapper.post-slider{ background-color: #000000; }
+.gdlr-caption-wrapper.post-slider .gdlr-caption-title{ color: #ffffff; }
+.gdlr-caption-wrapper.post-slider .gdlr-caption-text{ color: #dddddd; }
+.nav-container.style-1 .flex-direction-nav a{ border-color: #74c6de; }
+.nav-container.style-1 .flex-direction-nav i{ color: #ffffff; }
+input[type="text"], input[type="email"], input[type="password"], textarea{ background-color: #3d3d3d; }
+input[type="text"], input[type="email"], input[type="password"], textarea{ color: #cccccc; }
+.footer-wrapper{ border-top-color: #74c6de; }
+.footer-wrapper{ background-color: #111111; }
+.footer-wrapper .gdlr-widget-title, .footer-wrapper .gdlr-widget-title a{ color: #ffffff; }
+.footer-wrapper{ color: #cccccc; }
+.footer-wrapper a{ color: #ffffff; }
+.footer-wrapper a:hover{ color: #4fa0b5; }
+.footer-wrapper *{ border-color: #363636; }
+.footer-wrapper input[type="text"], .footer-wrapper input[type="email"], .footer-wrapper input[type="password"], .footer-wrapper textarea{ background-color: #333333; }
+.footer-wrapper input[type="text"], .footer-wrapper input[type="email"], .footer-wrapper input[type="password"], .footer-wrapper textarea{ color: #a5a5a5; }
+.footer-wrapper .tagcloud a{ background-color: #74c6de; }
+.footer-wrapper .tagcloud a, .footer-wrapper .tagcloud a:hover{ color: #ffffff; }
+.copyright-wrapper{ background-color: #282828; }
+.copyright-wrapper{ color: #6d6d6d; }
+.footer-wrapper .copyright-wrapper{ border-color: #3f3f3f; }
+html  .woocommerce span.onsale, html  .woocommerce-page span.onsale, html .woocommerce-message,html .woocommerce div.product .woocommerce-tabs ul.tabs li.active, html .woocommerce #content div.product .woocommerce-tabs ul.tabs li.active,html .woocommerce-page div.product .woocommerce-tabs ul.tabs li.active, html .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li.active {  background: #74c6de; }html .woocommerce .star-rating, html .woocommerce-page .star-rating, html .woocommerce .star-rating:before, html .woocommerce-page .star-rating:before, html .woocommerce div.product span.price, html .woocommerce div.product p.price, html .woocommerce #content div.product span.price, html .woocommerce #content div.product p.price, html .woocommerce-page div.product span.price, html .woocommerce-page div.product p.price, html .woocommerce-page #content div.product span.price, html .woocommerce-page #content div.product p.price {color: #74c6de; }
+html .woocommerce-message  a.button, html .woocommerce-error  a.button, html .woocommerce-info  a.button, html .woocommerce-info a.showcoupon, html .woocommerce-message, html .woocommerce-error, html .woocommerce-info, html  .woocommerce span.onsale, html  .woocommerce-page span.onsale, html .woocommerce div.product .woocommerce-tabs ul.tabs li.active,html .woocommerce #content div.product .woocommerce-tabs ul.tabs li.active, html .woocommerce-page div.product .woocommerce-tabs ul.tabs li.active, html .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li.active, html .woocommerce nav.woocommerce-pagination ul li span.current, html .woocommerce-page nav.woocommerce-pagination ul li span.current, html .woocommercenav.woocommerce-pagination ul li a:hover, html .woocommerce-page nav.woocommerce-pagination ul li a:hover{ color: #ffffff; }
+html .woocommerce-info{ background: #389EC5; }
+html .woocommerce-error{ background: #C23030; }
+html .woocommerce a.button.alt:hover, html .woocommerce button.button.alt:hover, html .woocommerce input.button.alt:hover, html .woocommerce #respond input#submit.alt:hover, html .woocommerce #content input.button.alt:hover, html .woocommerce-page a.button.alt:hover, html .woocommerce-page button.button.alt:hover, html .woocommerce-page input.button.alt:hover, html .woocommerce-page #respond input#submit.alt:hover, html .woocommerce-page #content input.button.alt:hover, html .woocommerce a.button.alt, html .woocommerce button.button.alt, html .woocommerce input.button.alt, html .woocommerce #respond input#submit.alt, html .woocommerce #content input.button.alt, html .woocommerce-page a.button.alt, html .woocommerce-page button.button.alt, html .woocommerce-page input.button.alt, html .woocommerce-page #respond input#submit.alt, html .woocommerce-page #content input.button.alt, html .woocommerce a.button, html .woocommerce button.button, html .woocommerce input.button, html .woocommerce #respond input#submit, html .woocommerce #content input.button, html .woocommerce-page a.button, html .woocommerce-page button.button, html .woocommerce-page input.button, html .woocommerce-page #respond input#submit, html .woocommerce-page #content input.button, html .woocommerce a.button:hover, html .woocommerce button.button:hover, html .woocommerce input.button:hover, html .woocommerce #respond input#submit:hover, html .woocommerce #content input.button:hover, html .woocommerce-page a.button:hover, html .woocommerce-page button.button:hover, html .woocommerce-page input.button:hover, html .woocommerce-page #respond input#submit:hover, html .woocommerce-page #content input.button:hover, html .woocommerce ul.products li.product a.loading, html .woocommerce div.product form.cart .button, html .woocommerce #content div.product form.cart .button, html .woocommerce-page div.product form.cart .button, html .woocommerce-page #content div.product form.cart .button{ background: #74c6de; }
+html .woocommerce a.button.alt:hover, html .woocommerce button.button.alt:hover, html .woocommerce input.button.alt:hover, html .woocommerce #respond input#submit.alt:hover, html .woocommerce #content input.button.alt:hover, html .woocommerce-page a.button.alt:hover, html .woocommerce-page button.button.alt:hover, html .woocommerce-page input.button.alt:hover, html .woocommerce-page #respond input#submit.alt:hover, html .woocommerce-page #content input.button.alt:hover, html .woocommerce a.button.alt, html .woocommerce button.button.alt, html .woocommerce input.button.alt, html .woocommerce #respond input#submit.alt, html .woocommerce #content input.button.alt, html .woocommerce-page a.button.alt, html .woocommerce-page button.button.alt, html .woocommerce-page input.button.alt, html .woocommerce-page #respond input#submit.alt, html .woocommerce-page #content input.button.alt, html .woocommerce a.button, html .woocommerce button.button, html .woocommerce input.button, html .woocommerce #respond input#submit, html .woocommerce #content input.button, html .woocommerce-page a.button, html .woocommerce-page button.button, html .woocommerce-page input.button, html .woocommerce-page #respond input#submit, html .woocommerce-page #content input.button, html .woocommerce a.button:hover, html .woocommerce button.button:hover, html .woocommerce input.button:hover, html .woocommerce #respond input#submit:hover, html .woocommerce #content input.button:hover, html .woocommerce-page a.button:hover, html .woocommerce-page button.button:hover, html .woocommerce-page input.button:hover, html .woocommerce-page #respond input#submit:hover, html .woocommerce-page #content input.button:hover, html .woocommerce ul.products li.product a.loading, html .woocommerce div.product form.cart .button, html .woocommerce #content div.product form.cart .button, html .woocommerce-page div.product form.cart .button, html .woocommerce-page #content div.product form.cart .button{ color: #ffffff; }
+html .woocommerce a.button.alt:hover, html .woocommerce button.button.alt:hover, html .woocommerce input.button.alt:hover, html .woocommerce #respond input#submit.alt:hover, html .woocommerce #content input.button.alt:hover, html .woocommerce-page a.button.alt:hover, html .woocommerce-page button.button.alt:hover, html .woocommerce-page input.button.alt:hover, html .woocommerce-page #respond input#submit.alt:hover, html .woocommerce-page #content input.button.alt:hover, html .woocommerce a.button.alt, html .woocommerce button.button.alt, html .woocommerce input.button.alt, html .woocommerce #respond input#submit.alt, html .woocommerce #content input.button.alt, html .woocommerce-page a.button.alt, html .woocommerce-page button.button.alt, html .woocommerce-page input.button.alt, html .woocommerce-page #respond input#submit.alt, html .woocommerce-page #content input.button.alt, html .woocommerce a.button, html .woocommerce button.button, html .woocommerce input.button, html .woocommerce #respond input#submit, html .woocommerce #content input.button, html .woocommerce-page a.button, html .woocommerce-page button.button, html .woocommerce-page input.button, html .woocommerce-page #respond input#submit, html .woocommerce-page #content input.button, html .woocommerce a.button:hover, html .woocommerce button.button:hover, html .woocommerce input.button:hover, html .woocommerce #respond input#submit:hover, html .woocommerce #content input.button:hover, html .woocommerce-page a.button:hover, html .woocommerce-page button.button:hover, html .woocommerce-page input.button:hover, html .woocommerce-page #respond input#submit:hover, html .woocommerce-page #content input.button:hover, html .woocommerce ul.products li.product a.loading, html .woocommerce div.product form.cart .button, html .woocommerce #content div.product form.cart .button, html .woocommerce-page div.product form.cart .button, html .woocommerce-page #content div.product form.cart .button{ border-bottom: 3px solid #519ead; }
+html .woocommerce #reviews #comments ol.commentlist li img.avatar, html .woocommerce-page #reviews #comments ol.commentlist li img.avatar { background: #636363; }html .woocommerce #reviews #comments ol.commentlist li img.avatar, html .woocommerce-page #reviews #comments ol.commentlist li img.avatar,html .woocommerce #reviews #comments ol.commentlist li .comment-text, html .woocommerce-page #reviews #comments ol.commentlist li .comment-text,html .woocommerce ul.products li.product a img, html .woocommerce-page ul.products li.product a img, html .woocommerce ul.products li.product a img:hover ,html .woocommerce-page ul.products li.product a img:hover, html .woocommerce-page div.product div.images img, html .woocommerce-page #content div.product div.images img,html .woocommerce form.login, html .woocommerce form.checkout_coupon, html .woocommerce form.register, html .woocommerce-page form.login,html .woocommerce-page form.checkout_coupon, html .woocommerce-page form.register, html .woocommerce table.cart td.actions .coupon .input-text,html .woocommerce #content table.cart td.actions .coupon .input-text, html .woocommerce-page table.cart td.actions .coupon .input-text,html .woocommerce-page #content table.cart td.actions .coupon .input-text { border: 1px solid #636363; }html .woocommerce div.product .woocommerce-tabs ul.tabs:before, html .woocommerce #content div.product .woocommerce-tabs ul.tabs:before,html .woocommerce-page div.product .woocommerce-tabs ul.tabs:before, html .woocommerce-page #content div.product .woocommerce-tabs ul.tabs:before,html .woocommerce table.shop_table tfoot td, html .woocommerce table.shop_table tfoot th, html .woocommerce-page table.shop_table tfoot td,html .woocommerce-page table.shop_table tfoot th, html .woocommerce table.shop_table tfoot td, html .woocommerce table.shop_table tfoot th,html .woocommerce-page table.shop_table tfoot td, html .woocommerce-page table.shop_table tfoot th { border-bottom: 1px solid #636363; }html .woocommerce .cart-collaterals .cart_totals table tr:first-child th, html .woocommerce .cart-collaterals .cart_totals table tr:first-child td,html .woocommerce-page .cart-collaterals .cart_totals table tr:first-child th, html .woocommerce-page .cart-collaterals .cart_totals table tr:first-child td { border-top: 3px #636363 solid; }html .woocommerce .cart-collaterals .cart_totals tr td, html .woocommerce .cart-collaterals .cart_totals tr th,html .woocommerce-page .cart-collaterals .cart_totals tr td, html .woocommerce-page .cart-collaterals .cart_totals tr th { border-bottom: 2px solid #636363; }
+html .woocommerce div.product .woocommerce-tabs ul.tabs li, html .woocommerce #content div.product .woocommerce-tabs ul.tabs li, html .woocommerce-page div.product .woocommerce-tabs ul.tabs li, html .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li ,html .woocommerce table.cart a.remove, html .woocommerce #content table.cart a.remove, html .woocommerce-page table.cart a.remove, html .woocommerce-page #content table.cart a.remove, html .woocommerce #payment, html .woocommerce-page #payment, html .woocommerce .customer_details,html .woocommerce ul.order_details, html .woocommerce nav.woocommerce-pagination ul li a, html .woocommerce-page nav.woocommerce-pagination ul li a,html .woocommerce form .form-row input.input-text, html .woocommerce form .form-row textarea, html .woocommerce-page form .form-row input.input-text, html .woocommerce-page form .form-row textarea, html .woocommerce .quantity input.qty, html .woocommerce #content .quantity input.qty, html .woocommerce-page .quantity input.qty, html .woocommerce-page #content .quantity input.qty,html .woocommerce .widget_shopping_cart .total, html .woocommerce-page .widget_shopping_cart .total { background: #444444; }html .woocommerce .quantity input.qty, html .woocommerce #content .quantity input.qty, html .woocommerce-page .quantity input.qty, html .woocommerce-page #content .quantity input.qty { border: 1px solid #444444; }
+html .woocommerce .widget_shopping_cart .total, html .woocommerce-page .widget_shopping_cart .total { border-top: 2px solid #636363; }html .woocommerce table.cart a.remove:hover, html .woocommerce #content table.cart a.remove:hover, html .woocommerce-page table.cart a.remove:hover,html .woocommerce-page #content table.cart a.remove:hover, html #payment div.payment_box, html .woocommerce-page #payment div.payment_box { background: #636363; }
+html .woocommerce table.shop_table tfoot td, html .woocommerce table.shop_table tfoot th, html .woocommerce-page table.shop_table tfoot td,html .woocommerce-page table.shop_table tfoot th, .cart-subtotal th, .shipping th , .total th, html .woocommerce table.shop_attributes .alt th,html .woocommerce-page table.shop_attributes .alt th, html .woocommerce ul.products li.product .price, html.woocommerce-page ul.products li.product .price { color: #ffffff; }
+html .woocommerce ul.products li.product .price del, html .woocommerce-page ul.products li.product .price del,html .woocommerce table.cart a.remove, html .woocommerce #content table.cart a.remove, html .woocommerce-page table.cart a.remove,html .woocommerce-page #content table.cart a.remove { color: #c4c4c4; }
+html .woocommerce .quantity .plus, html .woocommerce .quantity .minus, html .woocommerce #content .quantity .plus, html .woocommerce #content .quantity .minus, 
+												html .woocommerce-page .quantity .plus, html .woocommerce-page .quantity .minus, html .woocommerce-page #content .quantity .plus, 
+												html .woocommerce-page #content .quantity .minus { border: 1px solid #a0a0a0; }
+html .woocommerce .quantity .plus, html .woocommerce .quantity .minus, html .woocommerce #content .quantity .plus, html .woocommerce #content .quantity .minus, 
+												html .woocommerce-page .quantity .plus, html .woocommerce-page .quantity .minus, html .woocommerce-page #content .quantity .plus, 
+												html .woocommerce-page #content .quantity .minus { color: #ffffff; }
+html .woocommerce .quantity .plus, html .woocommerce #content .quantity .plus,  html .woocommerce-page .quantity .plus,html .woocommerce-page #content .quantity .plus, html .woocommerce .quantity .plus:hover, html .woocommerce #content .quantity .plus:hover,html .woocommerce-page .quantity .plus:hover,  html .woocommerce-page #content .quantity .plus:hover{ background: #686868; }
+html .woocommerce .quantity .minus, html .woocommerce #content .quantity .minus,  html .woocommerce-page .quantity .minus,html .woocommerce-page #content .quantity .minus, html .woocommerce .quantity .minus:hover, html .woocommerce #content .quantity .minus:hover,html .woocommerce-page .quantity .minus:hover,  html .woocommerce-page #content .quantity .minus:hover{ background: #999999; }
+.gdlr-skin-dark-skin, .gdlr-skin-dark-skin .gdlr-skin-content{ color: #f4f4f4; }
+.gdlr-skin-dark-skin i{ color: #494949; }
+.gdlr-skin-dark-skin h1, .gdlr-skin-dark-skin h2, .gdlr-skin-dark-skin h3, .gdlr-skin-dark-skin h4, .gdlr-skin-dark-skin h5, .gdlr-skin-dark-skin h6, .gdlr-skin-dark-skin .gdlr-skin-title, .gdlr-skin-dark-skin .gdlr-skin-title a{ color: #ffffff; }
+.gdlr-skin-dark-skin .gdlr-skin-title a:hover{ color: #e2e2e2; }
+.gdlr-skin-dark-skin .gdlr-skin-info, .gdlr-skin-dark-skin .gdlr-skin-info a, .gdlr-skin-dark-skin .gdlr-skin-info a:hover{ color: #bababa; }
+.gdlr-skin-dark-skin a, .gdlr-skin-dark-skin .gdlr-skin-link, .gdlr-skin-dark-skin .gdlr-skin-link-color{ color: #ffffff; }
+.gdlr-skin-dark-skin a:hover, .gdlr-skin-dark-skin .gdlr-skin-link:hover{ color: #dbdbdb; }
+.gdlr-skin-dark-skin .gdlr-skin-box{ background-color: #ffffff; }
+.gdlr-skin-dark-skin *, .gdlr-skin-dark-skin .gdlr-skin-border{ border-color: #ffffff; }
+.gdlr-skin-white-text, .gdlr-skin-white-text .gdlr-skin-content{ color: #ffffff; }
+.gdlr-skin-white-text i{ color: #ffffff; }
+.gdlr-skin-white-text h1, .gdlr-skin-white-text h2, .gdlr-skin-white-text h3, .gdlr-skin-white-text h4, .gdlr-skin-white-text h5, .gdlr-skin-white-text h6, .gdlr-skin-white-text .gdlr-skin-title, .gdlr-skin-white-text .gdlr-skin-title a{ color: #ffffff; }
+.gdlr-skin-white-text .gdlr-skin-title a:hover{ color: #ffffff; }
+.gdlr-skin-white-text .gdlr-skin-info, .gdlr-skin-white-text .gdlr-skin-info a, .gdlr-skin-white-text .gdlr-skin-info a:hover{ color: #ffffff; }
+.gdlr-skin-white-text a, .gdlr-skin-white-text .gdlr-skin-link, .gdlr-skin-white-text .gdlr-skin-link-color{ color: #ffffff; }
+.gdlr-skin-white-text a:hover, .gdlr-skin-white-text .gdlr-skin-link:hover{ color: #ffffff; }
+.gdlr-skin-white-text .gdlr-skin-box{ background-color: #ffffff; }
+.gdlr-skin-white-text *, .gdlr-skin-white-text .gdlr-skin-border{ border-color: #ffffff; }
+@font-face {
+font-family: "Sansation";
+src: url("http://demo.goodlayers.com/musicclub/wp-content/themes/musicclub/stylesheet/sansation_regular.eot");
+src: url("http://demo.goodlayers.com/musicclub/wp-content/themes/musicclub/stylesheet/sansation_regular.eot?#iefix") format("embedded-opentype"), 
+url("http://demo.goodlayers.com/musicclub/wp-content/themes/musicclub/stylesheet/sansation_regular.ttf") format("truetype");
+}
