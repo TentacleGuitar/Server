@@ -1,21 +1,11 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace TentacleGuitar.Server.Models
 {
-    public class User
+    public class User : IdentityUser<long>
     {
-        public long Id { get; set; }
-
-        [MaxLength(64)]
-        public string UserName { get; set; }
-
-        [MaxLength(64)]
-        public string Password { get; set; }
-
-        [MaxLength(64)]
-        public string Email { get; set; }
-
         [MaxLength(64)]
         public string Token { get; set; }
 

@@ -28,6 +28,12 @@ namespace TentacleGuitar.Server.Models
                 e.HasIndex(x => x.Title);
                 e.HasIndex(x => x.Level);
             });
+
+            builder.Entity<History>(e =>
+            {
+                e.HasIndex(x => x.Time);
+                e.HasIndex(x => x.Point);
+            });
         }
     }
 }
