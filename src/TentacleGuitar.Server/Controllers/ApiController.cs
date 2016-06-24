@@ -7,7 +7,7 @@ using TentacleGuitar.Server.Models;
 
 namespace TentacleGuitar.Server.Controllers
 {
-    public class HomeController : BaseController
+    public class ApiController : BaseController
     {
         [HttpPost("/SignIn")]
         public IActionResult SignIn(string Username, string Password)
