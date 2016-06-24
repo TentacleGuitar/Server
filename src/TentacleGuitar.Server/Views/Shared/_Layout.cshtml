@@ -176,6 +176,10 @@
                                             <a asp-action="Manage" asp-controller="System">Manage</a>
                                         </li>
                                     }
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-type-post_type menu-item-object-page gdlr-normal-menu">
+                                        <a href="$('#frmSignOut').submit()">Sign Out</a>
+                                    </li>
+                                    <form asp-action="SignOut" asp-controller="Account" id="frmSignOut"></form>
                                 }
                             </ul>
                         </nav>
@@ -189,7 +193,7 @@
                 <div class="gdlr-page-title-overlay"></div>
                 <div class="gdlr-page-title-container container gdlr-with-icon">
                     <div class="gdlr-page-header-icon"><i class="icon-th-list"></i></div>				
-                    <h1 class="gdlr-page-title">@(ViewBag.Title ?? "Tentacle Guitar")</h1>
+                    <h1 class="gdlr-page-title">@((ViewBag.Title == null || ViewBag.Title == "Home") ? "Tentacle Guitar" : ViewBag.Title)</h1>
                     <span class="gdlr-page-caption">@ViewBag.SubTitle</span>
                 </div>
                 <div class="gdlr-header-bottom-gimmick"></div>
