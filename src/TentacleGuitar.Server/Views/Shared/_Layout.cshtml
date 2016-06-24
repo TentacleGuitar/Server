@@ -153,7 +153,30 @@
 
                         <nav class="gdlr-navigation" id="gdlr-main-navigation" role="navigation">
                             <ul id="menu-main-menu" class="sf-menu gdlr-main-menu">
-                                <li id="menu-item-2739" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2739menu-item menu-item-type-post_type menu-item-object-page menu-item-2739 gdlr-normal-menu"><a href="http://demo.goodlayers.com/musicclub/">Home</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-type-post_type menu-item-object-page gdlr-normal-menu">
+                                    <a href="/">Home</a>
+                                </li>
+                                @if (!User.IsSignedIn())
+                                {
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-type-post_type menu-item-object-page gdlr-normal-menu">
+                                        <a asp-action="Login" asp-controller="Account">Sign In</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-type-post_type menu-item-object-page gdlr-normal-menu">
+                                        <a asp-action="Register" asp-controller="Account">Sign Up</a>
+                                    </li>
+                                }
+                                else
+                                {
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-type-post_type menu-item-object-page gdlr-normal-menu">
+                                        <a asp-action="MyProfile" asp-controller="Account">My Profile</a>
+                                    </li>
+                                    @if (User.IsInRole("Root"))
+                                    {
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-type-post_type menu-item-object-page gdlr-normal-menu">
+                                            <a asp-action="Manage" asp-controller="System">Manage</a>
+                                        </li>
+                                    }
+                                }
                             </ul>
                         </nav>
                     </div>
