@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using TentacleGuitar.Server.Models;
 
@@ -18,7 +13,7 @@ namespace TentacleGuitar.Server
         {
             services.AddDbContext<GuitarContext>(x => x.UseSqlite("Data source=tentacleguitar.db"));
 
-            services.AddIdentity<User, IdentityRole>(x =>
+            services.AddIdentity<User, IdentityRole<long>>(x =>
             {
                 x.Password.RequireDigit = false;
                 x.Password.RequiredLength = 0;
@@ -31,10 +26,13 @@ namespace TentacleGuitar.Server
                  .AddEntityFrameworkStores<GuitarContext>();
 
             services.AddMvc();
+            services.AddLogging();
         }
 
-        public async void Configure(IApplicationBuilder app)
+        public async void Configure(IApplicationBuilder app, ILoggerFactory logger)
         {
+            logger.AddConsole(LogLevel.Warning, true);
+
             app.UseStaticFiles();
             app.UseIdentity();
             app.UseDeveloperExceptionPage();

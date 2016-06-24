@@ -10,16 +10,22 @@ namespace TentacleGuitar.Server.Controllers
     public class ApiController : BaseController
     {
         [HttpPost("/SignIn")]
-        public IActionResult SignIn(string Username, string Password)
+        public async Task<IActionResult> SignIn(string Username, string Password)
         {
-            var user = DB.Users.SingleOrDefault(x => x.UserName == Username && x.Password == Password);
-            if (user.Expire <= DateTime.Now)
+            var user = DB.Users.SingleOrDefault(x => x.UserName == Username);
+            if (user == null)
+                return Content("Access Denied");
+            if (await User.Manager.CheckPasswordAsync(user, Password))
             {
-                user.Token = Guid.NewGuid().ToString();
-                user.Expire = DateTime.Now.AddDays(15);
-                DB.SaveChanges();
+                if (user.Expire <= DateTime.Now)
+                {
+                    user.Token = Guid.NewGuid().ToString();
+                    user.Expire = DateTime.Now.AddDays(15);
+                    DB.SaveChanges();
+                }
+                return Content(user.Token);
             }
-            return Content(user?.Token ?? "Access Denied");
+            return Content("Access Denied");
         }
 
         [HttpPost("/GetMusics")]
