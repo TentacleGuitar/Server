@@ -50,7 +50,8 @@ namespace TentacleGuitar.Server.Controllers
             music.Title = title;
             music.Level = level;
             music.Tabular = tabular;
-            music.Instrument = instrument.ReadAllBytes();
+            if (instrument != null)
+                music.Instrument = instrument.ReadAllBytes();
             DB.SaveChanges();
             return View();
         }
