@@ -88,7 +88,13 @@ namespace TentacleGuitar.Tabular
                         var technical = y.ChildNodes.Cast<XmlNode>().Where(z => z.Name == "notations").First().ChildNodes.Item(0);
                         if (technical == null)
                             continue;
-                        ret.Notes[timePoint].Add(new Note { Duration = 1, Fret = Convert.ToInt32(technical.LastChild.InnerText.ToString()), String = Convert.ToInt32(technical.FirstChild.InnerText.ToString()) }); // Duration为音长，目前没有实施延音线逻辑
+                        var pitchStr = "";
+                        var pitch = y.ChildNodes.Cast<XmlNode>().Where(z => z.Name == "pitch").First();
+                        pitchStr = pitch.ChildNodes.Item(0).InnerText;
+                        if (pitch.ChildNodes.Cast<XmlNode>().Where(z => z.Name == "pitch").Count() > 0)
+                            pitchStr += "#";
+                        pitchStr += pitch.ChildNodes.Cast<XmlNode>().Last().InnerText;
+                        ret.Notes[timePoint].Add(new Note { Duration = 1, Fret = Convert.ToInt32(technical.LastChild.InnerText.ToString()), String = Convert.ToInt32(technical.FirstChild.InnerText.ToString()), Pitch = pitchStr }); // Duration为音长，目前没有实施延音线逻辑
                     }
                     catch (Exception ex)
                     {

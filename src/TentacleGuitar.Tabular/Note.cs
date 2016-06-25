@@ -26,5 +26,7 @@ namespace TentacleGuitar.Tabular
         /// 演奏手法
         /// </summary>
         public PlayMode Mode { get; set; }
+
+        public string Pitch { get; set; }
     }
 }
