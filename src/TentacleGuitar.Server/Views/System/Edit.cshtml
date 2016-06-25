@@ -1,0 +1,43 @@
+﻿@model Music
+@{
+    ViewBag.Title = "Upload";
+}
+
+<div class="with-sidebar-wrapper">
+    <section id="content-section-1">
+        <div class="section-container container">
+            <div class="blog-item-wrapper">
+                <div class="blog-item-holder">
+                    <div class="gdlr-item gdlr-blog-full">
+                        <div class="gdlr-ux gdlr-blog-full-ux">
+                            <article class="post type-post status-publish format-standard has-post-thumbnail hentry category-fit-row category-life-style">
+                                <div class="gdlr-standard-style">
+                                    <div class="gdlr-blog-content-wrapper">
+                                        <div class="gdlr-blog-content-inner">
+                                            <header class="post-header">
+                                                <h3 class="gdlr-blog-title">Upload</h3>
+                                                <div class="clear"></div>
+                                            </header><!-- entry-header -->
+
+                                            <div class="gdlr-blog-content">
+                                                <form asp-action="Upload" asp-controller="Message">
+                                                    <p><input type="text" placeholder="Title" asp-for="Title" /></p>
+                                                    <p><input type="text" placeholder="Level" asp-for="Level" /></p>
+                                                    <p><textarea asp-for="Tabular"></textarea></p>
+                                                    <p><input type="file" name="instrument" value="1" /> Instrument（*.mp3）</p>
+                                                    <p><input type="submit" value="Save" /></p>
+                                                </form>
+                                            </div>
+                                        </div> <!-- blog-content-inner -->
+
+                                    </div> <!-- blog-content-wrapper -->
+                                    <div class="clear"></div>
+                                </div>
+                            </article><!-- #post -->
+                        </div>
+                    </div>
+                </div>
+            </div><div class="clear"></div>
+        </div>
+    </section>
+</div>
