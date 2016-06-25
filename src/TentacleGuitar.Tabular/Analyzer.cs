@@ -73,7 +73,6 @@ namespace TentacleGuitar.Tabular
                                 delta = 0;
                                 break;
                         }
-                        delta *= beats;
                         timePoint += delta;
                     }
                     if (!ret.Notes.ContainsKey(timePoint))
