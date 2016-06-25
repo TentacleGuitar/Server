@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 using TentacleGuitar.Server.Models;
+using TentacleGuitar.Tabular;
 
 namespace TentacleGuitar.Server.Controllers
 {
@@ -25,9 +26,10 @@ namespace TentacleGuitar.Server.Controllers
 
         [HttpPost]
         [AnyRoles("Root")]
-        public IActionResult Upload(Music Model, IFormFile Instrument)
+        public IActionResult Upload(Music Model, IFormFile Xml, IFormFile Instrument)
         {
             Model.Instrument = Instrument.ReadAllBytes();
+            Model.Tabular = Newtonsoft.Json.JsonConvert.SerializeObject(Analyzer.ParseMusicXml(System.Text.Encoding.UTF8.GetString(Xml.ReadAllBytes())));
             DB.Musics.Add(Model);
             DB.SaveChanges();
             return RedirectToAction("Manage", "System");
