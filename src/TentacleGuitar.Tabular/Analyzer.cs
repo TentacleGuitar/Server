@@ -48,17 +48,13 @@ namespace TentacleGuitar.Tabular
                 var notes = x.ChildNodes.Cast<XmlNode>().Where(y => y.Name == "note").ToList();
                 foreach(var y in notes)
                 {
-                    // 判断是否为休止符
-                    if (y.ChildNodes.Cast<XmlNode>().Where(z => z.Name == "rest").Count() == 0)
-                        continue;
-
                     // 判断是否为和弦
                     if (y.ChildNodes.Cast<XmlNode>().Where(z => z.Name == "chord").Count() == 0)
                     {
                         var type = y.ChildNodes.Cast<XmlNode>().First(z => z.Name == "type").InnerText.ToString();
                         switch(type)
                         {
-                            case "full":
+                            case "whole":
                                 delta = 60* 1000 * beats / ret.BPM;
                                 break;
                             case "half":
@@ -82,15 +78,25 @@ namespace TentacleGuitar.Tabular
                     if (!ret.Notes.ContainsKey(timePoint))
                         ret.Notes.Add(timePoint, new List<Note>());
 
-                    // 寻找品、弦信息
-                    var technical = y.ChildNodes.Cast<XmlNode>().Where(z => z.Name == "technical").FirstOrDefault();
-                    if (technical == null)
+                    // 判断是否为休止符
+                    if (y.ChildNodes.Cast<XmlNode>().Where(z => z.Name == "rest").Count() > 0)
                         continue;
 
-                    ret.Notes[timePoint].Add(new Note { Duration = 1, Fret = Convert.ToInt32(technical.LastChild.InnerText.ToString()), String = Convert.ToInt32(technical.FirstChild.InnerText.ToString()) }); // Duration为音长，目前没有实施延音线逻辑
+                    // 寻找品、弦信息
+                    try
+                    {
+                        var technical = y.ChildNodes.Cast<XmlNode>().Where(z => z.Name == "notations").First().ChildNodes.Item(0);
+                        if (technical == null)
+                            continue;
+                        ret.Notes[timePoint].Add(new Note { Duration = 1, Fret = Convert.ToInt32(technical.LastChild.InnerText.ToString()), String = Convert.ToInt32(technical.FirstChild.InnerText.ToString()) }); // Duration为音长，目前没有实施延音线逻辑
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.ToString());
+                        continue;
+                    }
                 }
             }
-
             return ret;
         }
     }
