@@ -17,7 +17,7 @@ namespace TentacleGuitar.Server.Controllers
                 return Content("Access Denied");
             if (await User.Manager.CheckPasswordAsync(user, Password))
             {
-                if (user.Expire <= DateTime.Now)
+                if (string.IsNullOrEmpty(user.Token) || user.Expire <= DateTime.Now)
                 {
                     user.Token = Guid.NewGuid().ToString();
                     user.Expire = DateTime.Now.AddDays(15);

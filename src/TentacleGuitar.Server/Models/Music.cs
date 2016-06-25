@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using Newtonsoft.Json;
 
 namespace TentacleGuitar.Server.Models
 {
@@ -15,8 +16,10 @@ namespace TentacleGuitar.Server.Models
 
         public int Level { get; set; }
 
+        [JsonIgnore]
         public string Tabular { get; set; }
 
+        [JsonIgnore]
         public byte[] Instrument { get; set; }
     }
 }
