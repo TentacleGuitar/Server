@@ -15,12 +15,13 @@ namespace TentacleGuitar.Tabular
             xmlDoc.LoadXml(xml.Replace("<!DOCTYPE score-partwise PUBLIC \"-//Recordare//DTD MusicXML 2.0 Partwise//EN\" \"musicxml20/partwise.dtd\">",""));
 
             // 获取每分钟节拍数
-            ret.BPM = Convert.ToInt32(xmlDoc.GetElementsByTagName("per-minute").Item(0).Value.ToString());
+            var tag = xmlDoc.GetElementsByTagName("per-minute");
+            ret.BPM = Convert.ToInt32(tag.Item(0).InnerText.ToString());
 
             // 获取调弦信息
             var tuning = xmlDoc.GetElementsByTagName("staff-tuning");
             foreach (XmlNode x in tuning)
-                ret.Staff.Add(new Staff { TuningStep = x.FirstChild.Value.ToString(), TuningOctave = Convert.ToInt32(x.LastChild.Value.ToString()) });
+                ret.Staff.Add(new Staff { TuningStep = x.FirstChild.InnerText.ToString(), TuningOctave = Convert.ToInt32(x.LastChild.InnerText.ToString()) });
 
             // 获取全部小节
             var measures = xmlDoc.GetElementsByTagName("measure");
@@ -38,8 +39,8 @@ namespace TentacleGuitar.Tabular
                 if (x.ChildNodes.Cast<XmlNode>().Where(y => y.Name == "attributes").Count() > 0 && x.ChildNodes.Cast<XmlNode>().First(y => y.Name == "attributes").Cast<XmlNode>().Where(y => y.Name == "time").Count() > 0)
                 {
                     var time = x.ChildNodes.Cast<XmlNode>().First(y => y.Name == "attributes").Cast<XmlNode>().Where(y => y.Name == "time").First();
-                    beats = Convert.ToInt32(time.FirstChild.Value.ToString());
-                    beatType = Convert.ToInt32(time.LastChild.Value.ToString());
+                    beats = Convert.ToInt32(time.FirstChild.InnerText.ToString());
+                    beatType = Convert.ToInt32(time.LastChild.InnerText.ToString());
                     timePerBeat = 60 * 1000 / ret.BPM;
                 }
 
@@ -54,7 +55,7 @@ namespace TentacleGuitar.Tabular
                     // 判断是否为和弦
                     if (y.ChildNodes.Cast<XmlNode>().Where(z => z.Name == "chord").Count() == 0)
                     {
-                        var type = y.ChildNodes.Cast<XmlNode>().First(z => z.Name == "type").Value.ToString();
+                        var type = y.ChildNodes.Cast<XmlNode>().First(z => z.Name == "type").InnerText.ToString();
                         switch(type)
                         {
                             case "full":
@@ -86,7 +87,7 @@ namespace TentacleGuitar.Tabular
                     if (technical == null)
                         continue;
 
-                    ret.Notes[timePoint].Add(new Note { Duration = 1, Fret = Convert.ToInt32(technical.LastChild.Value.ToString()), String = Convert.ToInt32(technical.FirstChild.Value.ToString()) }); // Duration为音长，目前没有实施延音线逻辑
+                    ret.Notes[timePoint].Add(new Note { Duration = 1, Fret = Convert.ToInt32(technical.LastChild.InnerText.ToString()), String = Convert.ToInt32(technical.FirstChild.InnerText.ToString()) }); // Duration为音长，目前没有实施延音线逻辑
                 }
             }
 

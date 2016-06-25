@@ -39,7 +39,8 @@ namespace TentacleGuitar.Server.Controllers
         [AnyRoles("Root")]
         public IActionResult Edit()
         {
-            return View();
+            var music = DB.Musics.Single(x => x.Id == id);
+            return View(music);
         }
 
         [HttpPost]
