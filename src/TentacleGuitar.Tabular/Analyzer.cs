@@ -12,7 +12,7 @@ namespace TentacleGuitar.Tabular
         {
             var ret = new Tabular();
             var xmlDoc = new XmlDocument();
-            xmlDoc.LoadXml(xml);
+            xmlDoc.LoadXml(xml.Replace("<!DOCTYPE score-partwise PUBLIC \"-//Recordare//DTD MusicXML 2.0 Partwise//EN\" \"musicxml20/partwise.dtd\">",""));
 
             // 获取每分钟节拍数
             ret.BPM = Convert.ToInt32(xmlDoc.GetElementsByTagName("per-minute").Item(0).Value.ToString());
@@ -31,7 +31,7 @@ namespace TentacleGuitar.Tabular
             // 生成音符列表
             foreach (XmlNode x in measures)
             {
-                int beats, beatType; // 定义拍号信息
+                int beats = 4, beatType = 4; // 定义拍号信息
                 int timePerBeat; // 定义每拍占用毫秒数
 
                 // 判断小节是否变奏
@@ -53,7 +53,31 @@ namespace TentacleGuitar.Tabular
 
                     // 判断是否为和弦
                     if (y.ChildNodes.Cast<XmlNode>().Where(z => z.Name == "chord").Count() == 0)
+                    {
+                        var type = y.ChildNodes.Cast<XmlNode>().First(z => z.Name == "type").Value.ToString();
+                        switch(type)
+                        {
+                            case "full":
+                                delta = 60* 1000 * beats / ret.BPM;
+                                break;
+                            case "half":
+                                delta = 60 * 1000 * beats / (ret.BPM * 2);
+                                break;
+                            case "quarter":
+                                delta = 60 * 1000 * beats / (ret.BPM * 4);
+                                break;
+                            case "eigth":
+                                delta = 60 * 1000 * beats / (ret.BPM * 8);
+                                break;
+                            case "16th":
+                                delta = 60 * 1000 * beats / (ret.BPM * 16);
+                                break;
+                            default:
+                                delta = 0;
+                                break;
+                        }
                         timePoint += delta;
+                    }
                     if (!ret.Notes.ContainsKey(timePoint))
                         ret.Notes.Add(timePoint, new List<Note>());
 

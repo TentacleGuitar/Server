@@ -20,7 +20,7 @@
                                             </header><!-- entry-header -->
 
                                             <div class="gdlr-blog-content">
-                                                <form asp-action="Edit" asp-controller="System" asp-route-id="@Model.Id">
+                                                <form asp-action="Edit" asp-controller="System" asp-route-id="@Model.Id" enctype="multipart/form-data">
                                                     <p><input type="text" placeholder="Title" asp-for="Title" /></p>
                                                     <p><input type="text" placeholder="Level" asp-for="Level" /></p>
                                                     <p><textarea asp-for="Tabular"></textarea></p>
