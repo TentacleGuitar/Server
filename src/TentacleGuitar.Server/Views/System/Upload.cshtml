@@ -20,10 +20,11 @@
 
                                             <div class="gdlr-blog-content">
                                                 <form asp-action="Upload" asp-controller="System" enctype="multipart/form-data">
-                                                    <p><input type="text" placeholder="Title" name="Title" /></p>
-                                                    <p><input type="text" placeholder="Level" name="Level" value="1" /></p>
-                                                    <p><input type="file" name="xml" value="1" /> MusicXML</p>
-                                                    <p><input type="file" name="instrument" value="1" /> Instrument（*.mp3）</p>
+                                                    <p><span class="textholder">Title</span> <input type="text" placeholder="Song name" name="Title" /></p>
+                                                    <p><span class="textholder">Level</span> <input type="text" placeholder="1~10" name="Level" /></p>
+                                                    <p><span class="textholder">Offset</span> <input type="text" placeholder="ms" value="0" name="Offset" /> ms</p>
+                                                    <p><span class="textholder">Tabular</span><input type="file" name="xml" value="1" />(*.xml)</p>
+                                                    <p><span class="textholder">Instrument</span><input type="file" name="instrument" value="1" /> (*.mp3)</p>
                                                     <p><input type="submit" value="Upload" /></p>
                                                 </form>
                                             </div>

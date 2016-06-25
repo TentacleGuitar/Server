@@ -21,10 +21,11 @@
 
                                             <div class="gdlr-blog-content">
                                                 <form asp-action="Edit" asp-controller="System" asp-route-id="@Model.Id" enctype="multipart/form-data">
-                                                    <p><input type="text" placeholder="Title" asp-for="Title" /></p>
-                                                    <p><input type="text" placeholder="Level" asp-for="Level" /></p>
+                                                    <p><span class="textholder">Title</span> <input type="text" placeholder="Song name" asp-for="Title" /></p>
+                                                    <p><span class="textholder">Level</span> <input type="text" placeholder="1~10" asp-for="Level" /></p>
+                                                    <p><span class="textholder">Offset</span> <input type="text" placeholder="ms" asp-for="Offset" />ms</p>
                                                     <p><textarea style="height:300px; width: 500px;" asp-for="Tabular"></textarea></p>
-                                                    <p><input type="file" name="instrument" value="1" /> Instrument（*.mp3）</p>
+                                                    <p><span class="textholder">Instrument</span><input type="file" name="instrument" value="1" />（*.mp3）</p>
                                                     <p><input type="submit" value="Save" /></p>
                                                 </form>
                                             </div>

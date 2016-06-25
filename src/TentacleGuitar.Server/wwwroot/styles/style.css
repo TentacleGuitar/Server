@@ -1357,3 +1357,8 @@ only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device
 .mejs-container .mejs-controls .gdlr-next-button,
 .mejs-container .mejs-controls .gdlr-previous-button,
 .gdlr-float-player .mejs-container .mejs-controls .mejs-playpause-button{ background: #dadada; color: #3b3b3b; }
+
+.textholder {
+    display: inline-block;
+    width: 100px;
+}

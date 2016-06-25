@@ -45,12 +45,13 @@ namespace TentacleGuitar.Server.Controllers
 
         [HttpPost]
         [AnyRoles("Root")]
-        public IActionResult Edit(Guid id, int level, string title, string tabular, IFormFile instrument)
+        public IActionResult Edit(Guid id, int offset, int level, string title, string tabular, IFormFile instrument)
         {
             var music = DB.Musics.Single(x => x.Id == id);
             music.Title = title;
             music.Level = level;
             music.Tabular = tabular;
+            music.Offset = offset;
             if (instrument != null)
                 music.Instrument = instrument.ReadAllBytes();
             DB.SaveChanges();

@@ -16,6 +16,8 @@ namespace TentacleGuitar.Server.Models
 
         public int Level { get; set; }
 
+        public int Offset { get; set; }
+
         [JsonIgnore]
         public string Tabular { get; set; }
 
