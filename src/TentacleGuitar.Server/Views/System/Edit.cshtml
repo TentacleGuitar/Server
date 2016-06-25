@@ -1,6 +1,6 @@
 ﻿@model Music
 @{
-    ViewBag.Title = "Upload";
+    ViewBag.Title = "Edit";
 }
 
 <div class="with-sidebar-wrapper">
@@ -15,12 +15,12 @@
                                     <div class="gdlr-blog-content-wrapper">
                                         <div class="gdlr-blog-content-inner">
                                             <header class="post-header">
-                                                <h3 class="gdlr-blog-title">Upload</h3>
+                                                <h3 class="gdlr-blog-title">@Model.Title</h3>
                                                 <div class="clear"></div>
                                             </header><!-- entry-header -->
 
                                             <div class="gdlr-blog-content">
-                                                <form asp-action="Upload" asp-controller="Message">
+                                                <form asp-action="Edit" asp-controller="System" asp-route-id="@Model.Id">
                                                     <p><input type="text" placeholder="Title" asp-for="Title" /></p>
                                                     <p><input type="text" placeholder="Level" asp-for="Level" /></p>
                                                     <p><textarea asp-for="Tabular"></textarea></p>
