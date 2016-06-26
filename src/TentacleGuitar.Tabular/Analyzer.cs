@@ -49,6 +49,8 @@ namespace TentacleGuitar.Tabular
                     // 判断是否为和弦
                     if (y.ChildNodes.Cast<XmlNode>().Where(z => z.Name == "chord").Count() == 0)
                     {
+                        timePoint += delta;
+
                         var type = y.ChildNodes.Cast<XmlNode>().First(z => z.Name == "type").InnerText.ToString();
                         switch(type)
                         {
@@ -71,7 +73,6 @@ namespace TentacleGuitar.Tabular
                                 delta = 0;
                                 break;
                         }
-                        timePoint += delta;
                     }
                     if (!ret.Notes.ContainsKey(timePoint))
                         ret.Notes.Add(timePoint, new List<Note>());
