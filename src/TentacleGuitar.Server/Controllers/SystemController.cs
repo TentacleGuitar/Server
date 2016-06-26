@@ -55,7 +55,11 @@ namespace TentacleGuitar.Server.Controllers
             if (instrument != null)
                 music.Instrument = instrument.ReadAllBytes();
             DB.SaveChanges();
-            return View();
+            return Prompt(x =>
+            {
+                x.Title = "Succeeded";
+                x.Details = "OK";
+            });
         }
 
         [HttpPost]

@@ -33,7 +33,7 @@ namespace TentacleGuitar.Tabular
             foreach (XmlNode x in measures)
             {
                 int beats = 4, beatType = 4; // 定义拍号信息
-                int timePerBeat; // 定义每拍占用毫秒数
+                double timePerBeat = 0; // 定义每拍占用毫秒数
 
                 // 判断小节是否变奏
                 if (x.ChildNodes.Cast<XmlNode>().Where(y => y.Name == "attributes").Count() > 0 && x.ChildNodes.Cast<XmlNode>().First(y => y.Name == "attributes").Cast<XmlNode>().Where(y => y.Name == "time").Count() > 0)
@@ -41,7 +41,7 @@ namespace TentacleGuitar.Tabular
                     var time = x.ChildNodes.Cast<XmlNode>().First(y => y.Name == "attributes").Cast<XmlNode>().Where(y => y.Name == "time").First();
                     beats = Convert.ToInt32(time.FirstChild.InnerText.ToString());
                     beatType = Convert.ToInt32(time.LastChild.InnerText.ToString());
-                    timePerBeat = 60 * 1000 / ret.BPM;
+                    timePerBeat = 60 * 1000.0 / ret.BPM;
                 }
 
                 // 开始分析小节中音符
@@ -55,19 +55,19 @@ namespace TentacleGuitar.Tabular
                         switch(type)
                         {
                             case "whole":
-                                delta = 60* 1000 * beats / ret.BPM;
+                                delta = Convert.ToInt32(timePerBeat * beats);
                                 break;
                             case "half":
-                                delta = 60 * 1000 * beats / (ret.BPM * 2);
+                                delta = Convert.ToInt32(timePerBeat * beats / 2.0);
                                 break;
                             case "quarter":
-                                delta = 60 * 1000 * beats / (ret.BPM * 4);
+                                delta = Convert.ToInt32(timePerBeat * beats / 4.0);
                                 break;
-                            case "eigth":
-                                delta = 60 * 1000 * beats / (ret.BPM * 8);
+                            case "eighth":
+                                delta = Convert.ToInt32(timePerBeat * beats / 8.0);
                                 break;
                             case "16th":
-                                delta = 60 * 1000 * beats / (ret.BPM * 16);
+                                delta = Convert.ToInt32(timePerBeat * beats / 16.0);
                                 break;
                             default:
                                 delta = 0;
