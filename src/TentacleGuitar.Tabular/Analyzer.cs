@@ -25,16 +25,14 @@ namespace TentacleGuitar.Tabular
 
             // 获取全部小节
             var measures = xmlDoc.GetElementsByTagName("measure");
-
             var timePoint = 0L; // 当前时间点
             int delta = 0; // 定义下一时间点
+            int beats = 4, beatType = 4; // 定义拍号信息
+            double timePerBeat = 0; // 定义每拍占用毫秒数
 
             // 生成音符列表
             foreach (XmlNode x in measures)
             {
-                int beats = 4, beatType = 4; // 定义拍号信息
-                double timePerBeat = 0; // 定义每拍占用毫秒数
-
                 // 判断小节是否变奏
                 if (x.ChildNodes.Cast<XmlNode>().Where(y => y.Name == "attributes").Count() > 0 && x.ChildNodes.Cast<XmlNode>().First(y => y.Name == "attributes").Cast<XmlNode>().Where(y => y.Name == "time").Count() > 0)
                 {
