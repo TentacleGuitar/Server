@@ -36,13 +36,13 @@
                                                                 <td>@x.Level</td>
                                                                 <td>
                                                                     <a asp-action="Edit" asp-controller="System" asp-route-id="@x.Id">Edit</a>
-                                                                    <a href="javascript:Delete('@x.Id');" class="button">Delete</a>
+                                                                    <a href="javascript:Delete('@x.Id');">Delete</a>
                                                                 </td>
                                                             </tr>
                                                         }
                                                     </tbody>
                                                 </table>
-                                                <p><a asp-action="Upload" asp-controller="System">Upload</a></p>
+                                                <p><a asp-action="Upload" asp-controller="System" class="gdlr-button">Upload</a></p>
                                                 <form asp-action="Delete" asp-controller="System" id="frmDelete">
                                                     <input type="hidden" id="mid" name="id" />
                                                 </form>
